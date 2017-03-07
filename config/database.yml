@@ -47,7 +47,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: taco-api_test
+  database: taco_api_test
   pool: 5
   username: Aidan
   password:
