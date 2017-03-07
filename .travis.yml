@@ -1,7 +1,16 @@
+services:
+- postgresql
+
+before_script:
+- psql -c 'create database taco-api_test;' -U postgres
+
+env:
+- DB:postgresql
+
+script:
+- bundle exec rake db:test:prepare
+- bundle exec rspec spec/
+
 language: ruby
 rvm:
- - 2.2
- - jruby
- - rbx-2
-# uncomment and edit the following line if your project needs to run something other than `rake`:
-script: bundle exec rspec spec
+- 2.3.1
