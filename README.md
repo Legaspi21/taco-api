@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/Legaspi21/taco-api.svg?branch=master)](https://travis-ci.org/Legaspi21/taco-api)
 # Taco Api 
 :taco: :taco: :taco: :taco: :taco: :taco: 
 ###### Built on RAILS 5
