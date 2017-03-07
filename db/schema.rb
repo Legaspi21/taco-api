@@ -12,13 +12,16 @@
 
 ActiveRecord::Schema.define(version: 20170306221950) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "tacos", force: :cascade do |t|
     t.string   "title"
     t.string   "description"
     t.string   "uri"
-    t.integer  "price",       limit: 8
-    t.datetime "created_at",            null: false
-    t.datetime "updated_at",            null: false
+    t.bigint   "price"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
 end
